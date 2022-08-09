@@ -47,6 +47,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 32px;
+    gap:32px; 
+    flex-wrap: wrap;
     
 
 }
@@ -54,15 +56,17 @@ body {
 .leftbox{
 width: 500px;
 
+
 }
 
 .rightbox{
     width: 500px;    
-    background-color: #8f8f8f;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
+ 
 .title {
     color: #F9FAF8;
     font-size: 32px;
@@ -75,38 +79,32 @@ width: 500px;
 .main2{
     display:flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 16px;
-    
-    
+    align-items: center;      
 }
 
 .gallery {
     display:flex;
     margin: 15px;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .sub1 {
-    width: 200px;
-    height: 200px;
     display: flex;
+    width: 200px;
+    height: 252px;
     flex-direction: column;
-    margin: 0 25px;
+    margin: 25px 25px;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    gap:5px;
+    
 }
 .gallery img {
     display: flex;
-    border: 2px solid rgb(83, 83, 94);
-    width: 200px;
-    height: 200px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.623);
+    border-radius:100%;
+    margin-bottom: 16px;
+    
     
     
 }
