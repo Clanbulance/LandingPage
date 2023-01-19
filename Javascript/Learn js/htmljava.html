@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<div class="header">
+			<ul class="headerlist">
+				<li>Robbert-Jan</li>
+				<li class="rightlist">home</li>
+				<li>about</li>
+			</ul>
+		</div>
+	<div class="practicebox">
+<h1 id="h11">JavaScript</h1>
+<p> The results will be shown in the box below</p>
+<div class="javabox">
+<button id="btn">Activate</button>
+<div class="rightbox" id="righttbox">
+<p id="Infobox" >After clicking on the "Activate button" The code will run and require you to provide input if needed</p>
+</div>
+</div>
+</div>
+
+
+</body>
+<script>
+number = Number(prompt("enter a number"));
+let button = document.getElementById("btn");
+let txt = document.getElementById("Infobox");
+
+button.addEventListener('click',numberChecker);
+
+
+function numberChecker() {
+	if(number >= 10) {
+		document.getElementById("Infobox").innerHTML = "The Number is greater or equal"
+		document.getElementById("righttbox").style.backgroundcolor="red";
+	} else {
+		document.getElementById("Infobox").innerHTML = "The Number is small"
+		document.getElementByid("h11").style.backgroundcolor=red;
+	}
+}
+
+</script>
+
+
+</html>
